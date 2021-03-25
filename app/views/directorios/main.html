@@ -1,0 +1,62 @@
+ 
+		<!-- <link rel="stylesheet" type="text/css" href="../res/css/main.css"> -->
+		<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+		<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>  
+		<!-- <script src="../res/js/directorio.js"></script> -->
+		<script>
+			$(function(){	init();	});
+		</script>
+	<section>
+		<div class="ui-widget">
+			<input id="xtags" placeholder="Buscar en directorio">
+		</div>
+		<div>
+			<form action='' method="post" enctype="application/x-www-form-urlencoded" id="Form">
+				<div clas="row">
+					<div class="col-big">
+						<input type="text" name="nombre" placeholder="Nombre" class="" value="">
+					</div>
+				</div>
+				<div clas="row">
+					<div class="col-big">
+						<input type="text" name="cargo" placeholder="Cargo" class="" value="">
+					</div>
+					<div class="col-mini">
+						<input type="number" name="tel" placeholder="Tel" class="" value="">
+					</div>
+					<div class="col-mini">
+						<input type="number" name="ext" placeholder="Ext" class="" value="">
+					</div>
+				</div>
+				<div clas="row">
+					<div class="col-big">
+						<input type="text" name="empresa" placeholder="Empresa" class="">
+					</div>
+					<div class="col-middle">
+						<input type="email" name="correo" placeholder="Correo" class="" value="">
+					</div>
+				</div>
+				<div clas="row">
+					<div class="col-big">
+						<textarea name="observ" placeholder="Observaciones" class=""></textarea>
+					</div>
+				</div>
+				<div clas="row">
+					<div class="col-mini">
+						<input type="submit" name="submit" class="" value="Guardar" id="send">
+						<input type="hidden" name="id" class="" value="">
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+	<nav>
+		<ul class="menu">
+			<li>Numero de registro<div id="number"></div>
+			</li>
+			<li><button id="clean">limpiar</button></li>
+			<li><button id="edit" disabled>editar</button></li>
+			<li><button id="delete" disabled>eliminar</button></li>
+		</ul>
+	</nav>

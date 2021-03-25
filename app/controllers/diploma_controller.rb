@@ -1,0 +1,3 @@
+class DiplomaController < ApplicationController
+    
+end
